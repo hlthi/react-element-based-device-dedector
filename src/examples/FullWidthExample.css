@@ -1,0 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
+#full-width-example{
+    border: 2px solid #008489;
+}

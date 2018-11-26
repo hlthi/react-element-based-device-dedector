@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+#small-width-example{
+    display: flex !important;
+    flex-direction: row;
+    height: 100%;
+    flex: 1;
+}
+
+#small-width-example .fake-bar{
+    height: 100vh;
+    width: 250px;
+    font-size: 20px;
+    color : white;
+    text-align: center;
+    background: #FF5A5F;
+}
+
+#small-width-example .example-bar{
+    flex-grow: 1;
+    border: 2px solid #008489;
+}
+
