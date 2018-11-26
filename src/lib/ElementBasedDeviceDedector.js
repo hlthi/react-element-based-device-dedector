@@ -41,7 +41,7 @@ class ElementBasedDeviceDedector extends PureComponent {
   };
 
   render() {
-    const { refreshRate, ...otherProps } = this.props;
+    const { devices, ...otherProps } = this.props;
     return <ReactResizeDetector handleWidth onResize={this.onResize} {...otherProps} />;
   }
 }
@@ -58,19 +58,25 @@ ElementBasedDeviceDedector.propTypes = {
 
 ElementBasedDeviceDedector.defaultProps = {
   devices: [
+    // below 768px
     {
       name: 'mobile',
-      breakpointPx: 500,
+      breakpointPx: 768,
     },
+    // 768px - 991px
     {
       name: 'tablet',
-      breakpointPx: 720,
+      breakpointPx: 992,
     },
+    // 992px - 1200px
     {
       name: 'computer',
-      breakpointPx: 900,
+      breakpointPx: 1200,
     },
   ],
 };
 
 export default ElementBasedDeviceDedector;
+
+
+

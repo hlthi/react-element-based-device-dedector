@@ -85,21 +85,43 @@ const devices = [
   
 ## Example Gifs
   - Middle
-  ![](middle.gif)
+![](middle.gif)
   
   - Small
-   ![](small.gif)
+![](small.gif)
    
   - Full
-   ![](full.gif)
+![](full.gif)
  
 Live : http://panoramic-cake.surge.sh/
+
+## Default devices
+```javascript
+ const devices: [
+    // below 768px
+    {
+      name: 'mobile',
+      breakpointPx: 768,
+    },
+    // 768px - 991px
+    {
+      name: 'tablet',
+      breakpointPx: 992,
+    },
+    // 992px - 1200px
+    {
+      name: 'computer',
+      breakpointPx: 1200,
+    },
+  ]
+   ```
  
  ## API
  
  | Prop               | Type   | Description                                                                                                                                                                                            | Default     |
  | ------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
  | onChangeType       | Func   | Function that will be invoked with `name` and `lastBreakpointPx` arguments                                                                                                                                      | n/a         |
+ | devices            | array  | Define values|    {name: 'mobile', breakpointPx: 768},{name: 'tablet', breakpointPx: 992},  {name: 'computer', breakpointPx: 1200}|
  | skipOnMount        | Bool   | Do not trigger onChangeType when a component mounts                                                                                                                                                        | `false`     |
  | resizableElementId | String | Id of the element we want to observe. If none provided, parentElement of the component will be used                                                                                                    | `undefined` |
  | refreshMode        | String | Possible values: `throttle` and `debounce` See [lodash docs](https://lodash.com/docs#debounce) for more information. `undefined` - means that callback will be fired as often as ResizeObserver allows | `undefined` |
