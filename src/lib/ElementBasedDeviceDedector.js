@@ -41,14 +41,13 @@ class ElementBasedDeviceDedector extends PureComponent {
   };
 
   render() {
-    const { refreshRate } = this.props;
-    return <ReactResizeDetector handleWidth onResize={this.onResize} refreshRate={refreshRate} />;
+    const { refreshRate, ...otherProps } = this.props;
+    return <ReactResizeDetector handleWidth onResize={this.onResize} {...otherProps} />;
   }
 }
 
 ElementBasedDeviceDedector.propTypes = {
   onChangeType: PropTypes.func.isRequired,
-  refreshRate: PropTypes.number,
   devices: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
@@ -58,7 +57,6 @@ ElementBasedDeviceDedector.propTypes = {
 };
 
 ElementBasedDeviceDedector.defaultProps = {
-  refreshRate: 500,
   devices: [
     {
       name: 'mobile',
