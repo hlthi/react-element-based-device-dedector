@@ -2,16 +2,16 @@
   "author": "Muhammet Öztürk (https://github.com/hlthi/react-element-based-device-dedector)",
   "name": "react-element-based-device-dedector",
   "license": "MIT",
-  "version": "0.1.3",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "version": "0.1.4",
+  "main": "dist/ElementBasedDeviceDedector.js",
+  "module": "dist/ElementBasedDeviceDedector.js",
   "files": [
     "dist",
     "README.md"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hlthi/react-element-based-device-dedector.git"
+    "url": "https://github.com/hlthi/react-element-based-device-dedector"
   },
   "keywords": [
     "react",
@@ -32,6 +32,7 @@
     "@storybook/addons": "^4.0.9",
     "@storybook/react": "^4.0.9",
     "babel-loader": "^8.0.4",
+    "babel-plugin-transform-imports": "^1.5.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-import": "^2.14.0",
