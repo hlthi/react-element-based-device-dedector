@@ -4,7 +4,6 @@
   "license": "MIT",
   "version": "0.1.4",
   "main": "dist/ElementBasedDeviceDedector.js",
-  "module": "dist/ElementBasedDeviceDedector.js",
   "files": [
     "dist",
     "README.md"
