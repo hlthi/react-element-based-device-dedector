@@ -24,8 +24,6 @@ class ElementBasedDeviceDedector extends PureComponent {
       device1.breakpointPx > device2.breakpointPx ? -1 : device1.breakpointPx === device2.breakpointPx ? 0 : 1,
     );
 
-    console.log(devices);
-
     // compare
     for (let i = 0; i < devices.length; i += 1) {
       // check breakpoint and dont recall if already set
@@ -77,6 +75,3 @@ ElementBasedDeviceDedector.defaultProps = {
 };
 
 export default ElementBasedDeviceDedector;
-
-
-
