@@ -2,7 +2,7 @@
 
 This library for dedecting device type from parent dom.
 
-Demo : http://panoramic-cake.surge.sh/
+Demo : http://pathetic-cart.surge.sh
 
  ## Getting started
  
@@ -75,6 +75,28 @@ const devices = [
  render(<App />, document.getElementById('root'));
  ```
  
+## Usage With React Hook
+ ```jsx
+import React, { useState } from 'react';
+import ElementBasedDeviceDedector from 'react-element-based-device-dedector';
+
+const DomDevice = props => {
+  const { children } = props;
+  const [type, setType] = useState(null);
+  return (
+    <div>
+      <div>{`Device Type : ${type}`}</div>
+      {children}
+      <ElementBasedDeviceDedector onChangeType={deviceType => setType(deviceType)} />
+    </div>
+  );
+};
+
+
+export default DomDevice;
+ ```
+
+ 
 ## Storybook Examles
   ```shell
   git clone https://github.com/hlthi/react-element-based-device-dedector.git
@@ -92,7 +114,7 @@ const devices = [
   - Full
 ![](full.gif)
  
-Live : http://panoramic-cake.surge.sh/
+Live : http://pathetic-cart.surge.sh
 
 ## Default devices
 ```javascript
