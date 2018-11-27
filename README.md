@@ -23,7 +23,7 @@ Demo : http://panoramic-cake.surge.sh/
  ```jsx
  import React, { Component } from 'react';
  import { render } from 'react-dom';
- import ElementBasedDeviceDedector from 'element-based-device-dedector';
+ import ElementBasedDeviceDedector from 'react-element-based-device-dedector';
 
 const devices = [
   {
