@@ -63,7 +63,7 @@ const devices = [
      return (
        <div>
          ...
-        <ElementBasedDeviceDedector onChangeType={this.handleChangeType}/>
+        <ElementBasedDeviceDedector onChangeType={this.handleChangeType} devices={devices}/>
        </div>
      );
    }
