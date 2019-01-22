@@ -1,14 +1,11 @@
-import _objectWithoutProperties from "/Users/hlthi/WebstormProjects/react-element-based-device-dedector/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties";
-import _classCallCheck from "/Users/hlthi/WebstormProjects/react-element-based-device-dedector/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/classCallCheck";
-import _createClass from "/Users/hlthi/WebstormProjects/react-element-based-device-dedector/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/createClass";
-import _possibleConstructorReturn from "/Users/hlthi/WebstormProjects/react-element-based-device-dedector/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn";
-import _getPrototypeOf from "/Users/hlthi/WebstormProjects/react-element-based-device-dedector/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/getPrototypeOf";
-import _inherits from "/Users/hlthi/WebstormProjects/react-element-based-device-dedector/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/inherits";
+import _objectWithoutProperties from "@babel/runtime/helpers/esm/objectWithoutProperties";
+import _classCallCheck from "@babel/runtime/helpers/esm/classCallCheck";
+import _createClass from "@babel/runtime/helpers/esm/createClass";
+import _possibleConstructorReturn from "@babel/runtime/helpers/esm/possibleConstructorReturn";
+import _getPrototypeOf from "@babel/runtime/helpers/esm/getPrototypeOf";
+import _inherits from "@babel/runtime/helpers/esm/inherits";
 import React, { PureComponent } from 'react';
 import ReactResizeDetector from 'react-resize-detector';
-/**
- * https://usehooks.com/
- */
 
 var ElementBasedDeviceDedector =
 /*#__PURE__*/
